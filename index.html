@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algorithms Study Guide - Final Version</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; max-width: 1000px; margin: auto; padding: 20px; background-color: #f4f7f9; }
+        header { text-align: center; padding: 30px; background: #2c3e50; color: white; border-radius: 10px; margin-bottom: 30px; }
+        h1 { margin: 0; font-size: 2.5em; }
+        h2 { color: #e67e22; border-bottom: 3px solid #e67e22; padding-bottom: 10px; margin-top: 50px; text-transform: uppercase; }
+        h3 { color: #2980b9; margin-top: 25px; }
+        .section { background: white; padding: 30px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); margin-bottom: 40px; }
+        .flowchart-box { text-align: center; background: #fdfdfd; border: 2px dashed #bdc3c7; padding: 20px; margin: 20px 0; border-radius: 8px; }
+        .flowchart-box img { max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 5px; }
+        .code-container { background: #282c34; color: #abb2bf; padding: 20px; border-radius: 8px; font-family: 'Courier New', Courier, monospace; overflow-x: auto; margin: 15px 0; border-left: 5px solid #61dafb; }
+        .example-block { background: #e8f4fd; border-left: 5px solid #3498db; padding: 20px; margin-top: 20px; border-radius: 0 8px 8px 0; }
+        .steps-list { margin-left: 20px; }
+        .steps-list li { margin-bottom: 10px; }
+        .method-explanation { background: #f9f9f9; padding: 15px; border-radius: 5px; font-style: italic; border: 1px solid #eee; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Algorithm Analysis & Design</h1>
+    <p>Comprehensive Exam Preparation Guide</p>
+</header>
+
+<div class="section">
+    <h2>Tutorial 1: Computational Modeling (Set Intersection)</h2>
+    <h3>1. Problem Solving Steps</h3>
+    <ul class="steps-list">
+        <li>Identify the system variables and their ranges (e.g., numbers from 1 to 16).</li>
+        <li>Apply specific conditions to filter data (multiples of 3 and multiples of 5).</li>
+        <li>Perform the Intersection operation to find common elements.</li>
+    </ul>
+
+    <h3>2. Flowchart (Visual Representation)</h3>
+    <div class="flowchart-box">
+        <img src="https://imgs.search.brave.com/_g9fyXrQ3oRSr05Dx5jiKc5f7of8xNEmVV-vpB04dJg/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4x/LmJ5anVzLmNvbS93/cC1jb250ZW50L3Vw/bG9hZHMvMjAyMS8w/NS9WZW5uLWRpYWdy/YW1zLTYucG5n" alt="Set Intersection Flowchart">
+    </div>
+
+    <h3>3. Method of Explanation</h3>
+    <p class="method-explanation">This approach uses <b>Venn Diagrams</b> to visualize overlapping data. It models how real-world systems adjust variables to observe specific outcomes.</p>
+
+    <h3>4. Example (Intersection Problem)</h3>
+    <div class="example-block">
+        <p><b>Execution Steps:</b><br>
+        - Set A (Multiples of 3 &le; 16): {3, 6, 9, 12, 15}.<br>
+        - Set B (Multiples of 5 &le; 16): {5, 10, 15}.<br>
+        - Common Element: {15}.</p>
+        
+        <p><b>Flowchart Placeholder:</b></p>
+        <div class="flowchart-box"><img src="https://lh3.googleusercontent.com/rd-gg-dl/ABS2GSkuH57ZXJYJrYRCKJBB92f0JZohuL19EdHwATGhUkvNKLkttQerBCVVXPY6KYXgy3aGTCFhgMvwWLfMN0bIKBApSLJFz97SbG9HaONyvDgrmUF8dWktO8xx3KGuTXCqsTt9osMMrqKKwwkwUBOeWiqFDimla7lQq0c76H2LoghYtbPtHdc4nNfcilkOZRrnvoWEFpkJj2pUyZW55S9v7eQEFnOCs9mU9YkngACHYdrmMtkVFgqDOV6EK5LIPwx2TMCNcMdHtqgzWpvPsJokMfs6N3aFFc3MOLpaDOYsVEgkXNvcxFJgm_7HmLMXbpmNS0BL6zZU5EV949UwyafZ0yGmY0gBhPCkQStgOn6rnNT3xZG5zYBQL-3BAdHAyBqhT-kuED32fsCccNk7eS1pIUZqyf4kQUcT9Az_kJUDRi2XzJHQ8B9XpkmYGGI-v8ldcx4LuQxy3KIlY0DcWJU8DM5-gL0fRTJpPh9VCZsNGeTwG-RvQLb2clAqHmsjxjELgPqHSGgNBiXiF-sn02LvQW73viGRYFZ7cJ0lsEij7oN0CD2yIBSH2OZjrWPFElTADYchVdnkHVErrcpXolg5IvVxitl8DFvzZNJdbGSlgyWvii3XB9HYfs1wkMtmTFmqMhYxQxGtJ2c-DmGr5VNLgZCZP3R5MmcLiIYGzXmVzdHaL54C2J788sEp7EM_KT2nzRzEQ-avpATDdDKuXZMuaO-yuCYblSwrnVVuawqUoUbG-y-2hBHj3GBz3supxHcSC-7vLtMWqQLJjR9E4CjJwMH9yJa6Ycv42thcuxJXljdFmQqiWDEDJdLQfGhSSXeuSJK32mla6Ry50nRqzwqAZOIGKE0J66jWgpK7J_vCTwN7mIDPFPXVpzJZ2CacAaCKmlISWZ1bk-7ayfyRE1Ff04OmVt7RDfnGP33wj-g7BN68m31RJ5CjSJwT-1LAljU30L_B_QXDv6tHxPoBWkWBb577nAa31UG62xBbJVtFpSvlORtNecaUnxPNBC-bRPE15P_2twvlh0L2w5AabPo1lwWQZfqTSo1sLZfn6AbBtEaP_6LNBN0MdMtjIRyNMrXrH7F5K80yVomxRBaZoh1qYb-0zK9XmJ-UouijHlXXplSoKsgzU2iS8mY7gwJlyux03X0_Q808g9muYoWLSvysgnAUL_1-0wR9NMYaX1BIwVHqOVhonbMA=s1024-rj" alt="Venn Diagram Example"></div>
+
+        <p><b>Dummy Code:</b></p>
+        <div class="code-container">
+            Set A = findMultiples(3, 16);<br>
+            Set B = findMultiples(5, 16);<br>
+            print(A.intersect(B)); // Output: {15}
+        </div>
+
+        <p><b>Final Explanation:</b> The algorithm iterates through the range, filters numbers based on the modulo operation, and stores matches in a set to identify the intersection.</p>
+    </div>
+</div>
+
+<div class="section">
+    <h2>EX1: Insertion Sort</h2>
+    <h3>1. Problem Solving Steps</h3>
+    <ul class="steps-list">
+        <li>Assume the first element is already sorted.</li>
+        <li>Pick the next element (key) and compare it with elements in the sorted portion.</li>
+        <li>Shift larger elements to the right to create a vacancy.</li>
+        <li>Insert the key into its correct position.</li>
+    </ul>
+
+    <h3>2. Flowchart (Visual Representation)</h3>
+    <div class="flowchart-box">
+        <img src="https://imgs.search.brave.com/jpQhbZBxDq2CdvYcdU-W9PbURbFWsKqKIoRX6_7tofQ/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZWVrc2Zvcmdl/ZWtzLm9yZy93cC1j/b250ZW50L3VwbG9h/ZHMvaW5zZXJ0aW9u/c29ydC5wbmc" alt="Insertion Sort Flowchart">
+    </div>
+
+    <h3>3. Method of Explanation</h3>
+    <p class="method-explanation">It is explained as <b>Insertion Sort</b>. builds a sorted array one item at a time. It identifies the correct spot for each new element and shifts existing ones to make room for the insertion.</p>
+
+    <h3>4. Example (Input: 1926352)</h3>
+    <div class="example-block">
+        <p><b>Execution Steps:</b><br>
+        - [1] | 9, 2, 6, 3, 5, 2 (1 is sorted)<br>
+        - [1, 9] | 2, 6, 3, 5, 2 (9 is inserted)<br>
+        - [1, 2, 9] | 6, 3, 5, 2 (2 shifts 9 and inserts)<br>
+        - Final Result: [1, 2, 2, 3, 5, 6, 9].</p>
+        
+        <p><b>Flowchart Placeholder:</b></p>
+        <div class="flowchart-box"><img src="https://i.ibb.co/yBRqPTbd/20251231-231829.jpg" alt="Insertion Sort Example"></div>
+
+        <p><b>Dummy Code:</b></p>
+        <div class="code-container">
+            for i from 1 to N:<br>
+            &nbsp;&nbsp;key = arr[i]<br>
+            &nbsp;&nbsp;while j >= 0 and arr[j] > key:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;arr[j+1] = arr[j]<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;j--<br>
+            &nbsp;&nbsp;arr[j+1] = key
+        </div>
+
+        <p><b>Final Explanation:</b> This algorithm is efficient for small datasets (O(n)) but slow for large ones (O(n²)).</p>
+    </div>
+</div>
+
+<div class="section">
+    <h2>EX2: Recursion Trees</h2>
+    <h3>1. Problem Solving Steps</h3>
+    <ul class="steps-list">
+        <li>Break the main recurrence into a tree of subproblems.</li>
+        <li>Calculate the "cost" or work done at each node.</li>
+        <li>Sum the costs across each horizontal level of the tree.</li>
+        <li>Determine the total complexity by summing all levels.</li>
+    </ul>
+
+    <h3>2. Flowchart (Visual Representation)</h3>
+    <div class="flowchart-box">
+        <img src="https://imgs.search.brave.com/kHm8WJRCaCeJ_gvL93DSYaprKiFIUaYRLuP7MmuM-dA/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zY2Fs/ZXIuY29tL3RvcGlj/cy9pbWFnZXMvcmVj/dXJzaW9uLXRyZWUt/Zm9yLXRoZS1yZWN1/cnJlbmNlLXJlbGF0/aW9uLndlYnA" alt="Recursion Tree Flowchart">
+    </div>
+
+    <h3>3. Method of Explanation</h3>
+    <p class="method-explanation">This method <b>visualizes the breakdown</b> of a large problem. It helps identify which level contributes most to the runtime</p>
+
+    <h3>4. Example (T(n) = 2T(n/2) + n)</h3>
+    <div class="example-block">
+        <p><b>Execution Steps:</b><br>
+        - Level 0: n work.<br>
+        - Level 1: 2 nodes of n/2 = n work.<br>
+        - Level 2: 4 nodes of n/4 = n work.<br>
+        - Total: Level height (log n) * Work per level (n) = O(n log n).</p>
+        
+        <p><b>Flowchart Placeholder:</b></p>
+        <div class="flowchart-box"><img src="https://i.ibb.co/Xx1KH5jq/20251231-234413.jpg" alt="Recursion Tree Example"></div>
+
+        <p><b>Dummy Code:</b></p>
+        <div class="code-container">
+            Function Solve(n):<br>
+            &nbsp;&nbsp;if n == 1 return 1<br>
+            &nbsp;&nbsp;return 2 * Solve(n/2) + n
+        </div>
+
+        <p><b>Final Explanation:</b> By visualizing the recurrence as a tree, we see that the work is distributed equally across all log n levels.</p>
+    </div>
+</div>
+
+<div class="section">
+    <h2>EX3: Merge Sort (Divide & Conquer)</h2>
+    <h3>1. Problem Solving Steps</h3>
+    <ul class="steps-list">
+        <li><b>Divide:</b> Split the array into two halves.</li>
+        <li><b>Conquer:</b> Recursively sort each half until size is 1.</li>
+        <li><b>Combine:</b> Merge the two sorted halves back into one.</li>
+    </ul>
+
+    <h3>2. Flowchart (Visual Representation)</h3>
+    <div class="flowchart-box">
+        <img src="https://imgs.search.brave.com/3sQrCNoOcUusus_4JX-wnB57c1k7qlA5hdt2zAjS3ak/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/aW50ZXJ2aWV3Y2Fr/ZS5jb20vaW1hZ2Vz/L3N2Z3MvbWVyZ2Vf/c29ydF9fdG9wX2hh/bGZfb2ZfdGhlX2Rp/YW1vbmRfZGlhZ3Jh/bS5zdmc_YnVzdD0y/MTE" alt="Merge Sort Flowchart">
+    </div>
+
+    <h3>3. Method of Explanation</h3>
+    <p class="method-explanation">It is a <b>Top-Down</b> approach that guarantees stability. It ensures that equal elements maintain their relative order.</p>
+
+    <h3>4. Example (Input: 1926352)</h3>
+    <div class="example-block">
+        <p><b>Execution Steps:</b><br>
+        - Divide: [1, 9, 2, 6] and [3, 5, 2]<br>
+        - Conquer: Sort halves to [1, 2, 6, 9] and [2, 3, 5]<br>
+        - Combine: Merge to [1, 2, 2, 3, 5, 6, 9].</p>
+        
+        <p><b>Flowchart Placeholder:</b></p>
+        <div class="flowchart-box"><img src="https://i.ibb.co/6JBKrXN0/20260101-000755.jpg" alt="Merge Sort Example"></div>
+
+        <p><b>Dummy Code:</b></p>
+        <div class="code-container">
+            MergeSort(A, p, r):<br>
+            &nbsp;&nbsp;if p < r:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;q = (p+r)/2<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;MergeSort(A, p, q)<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;MergeSort(A, q+1, r)<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;Merge(A, p, q, r)
+        </div>
+
+        <p><b>Final Explanation:</b> Merge Sort is very efficient for large lists, operating at O(n log n) regardless of the initial data arrangement.</p>
+    </div>
+</div>
+
+<div class="section">
+    <h2>EX4: Quicksort</h2>
+    <h3>1. Problem Solving Steps</h3>
+    <ul class="steps-list">
+        <li>Select a <b>Pivot</b> element (e.g., the first element).</li>
+        <li><b>Partition</b> the list: elements < pivot to the left, elements > pivot to the right.</li>
+        <li>Recursively repeat the process for sub-lists.</li>
+    </ul>
+
+    <h3>3. Method of Explanation</h3>
+    <p class="method-explanation">Quicksort is known as a <b>General Purpose</b> sorting algorithm. It is typically twice as fast as Merge Sort in real-world scenarios.</p>
+
+    <h3>4. Example (Input: 4, 2, 7, 1, 5)</h3>
+    <div class="example-block">
+        <p><b>Execution Steps:</b><br>
+        - Pivot: 4. Partition: [2, 1] | 4 | [7, 5].<br>
+        - Recursively sort left: [1, 2].<br>
+        - Recursively sort right: [5, 7].<br>
+        - Final: [1, 2, 4, 5, 7].</p>
+        
+        <p><b>Flowchart Placeholder:</b></p>
+        <div class="flowchart-box"><img src="https://i.ibb.co/cSYMV32d/20260101-003221.jpg" alt="Quicksort Example"></div>
+
+        <p><b>Dummy Code:</b></p>
+        <div class="code-container">
+            QuickSort(arr, low, high):<br>
+            &nbsp;&nbsp;pIdx = Partition(arr, low, high)<br>
+            &nbsp;&nbsp;QuickSort(arr, low, pIdx-1)<br>
+            &nbsp;&nbsp;QuickSort(arr, pIdx+1, high)
+        </div>
+
+        <p><b>Final Explanation:</b> O(n log n) It uses the Divide and Conquer strategy efficiently by partitioning data around a central value.</p>
+    </div>
+</div>
+
+<div class="section">
+    <h2>EX5: Decision Trees & Linear Sorting</h2>
+    <h3>1. Problem Solving Steps</h3>
+    <ul class="steps-list">
+        <li>Represent all possible comparisons as internal nodes of a tree.</li>
+        <li>Represent all possible permutations (outputs) as leaves.</li>
+        <li>Use <b>Linear Time Sorting</b> (like Counting Sort) when data is in a restricted range to bypass comparisons.</li>
+    </ul>
+
+    <h3>3. Method of Explanation</h3>
+    <p class="method-explanation">The <b>IBM Punched Cards</b> example illustrates encoding data (like the word "CAT") as hole patterns instead of comparing characters.</p>
+
+    <h3>4. Example (IBM Card Encoding "CAT")</h3>
+    <div class="example-block">
+        <p><b>Execution Steps:</b><br>
+        - Map 'C' to hole pattern in Column 3.<br>
+        - Map 'A' to hole pattern in Column 1.<br>
+        - Map 'T' to hole pattern in Column 20.<br>
+        - Machine reads holes directly without comparisons.</p>
+        
+        <p><b>Flowchart Placeholder:</b></p>
+        <div class="flowchart-box"><img src="https://i.ibb.co/8nMmg8Gj/20260101-012239.jpg" alt="Punched Card Example"></div>
+
+        <p><b>Dummy Code:</b></p>
+        <div class="code-container">
+            cards = ['C', 'A', 'T']<br>
+            pockets = [None] * 26<br>
+            for card in cards:<br>
+            position = index_of(card)<br>
+            pockets[position] = card<br>
+            result = collect_all_from(pockets)
+        </div>
+
+        <p><b>Final Explanation:</b> Linear sorting bypasses the O(n) limit of comparison sorts by using direct mapping and counting.</p>
+    </div>
+</div>
+
+<div class="section">
+    <h2>EX6: Computational Geometry (3D Convex Hull)</h2>
+    <h3>1. Problem Solving Steps</h3>
+    <ul class="steps-list">
+        <li>Iterate through every triplet of points (a, b, c) to form a potential face.</li>
+        <li>For each triplet, check if all other points (p) lie on the same side of the triangle's plane.</li>
+        <li>Collect all triplets that satisfy this "same side" condition as the faces of the hull.</li>
+    </ul>
+
+    <h3>2. Flowchart (Visual Representation)</h3>
+    <div class="flowchart-box">
+        <img src="https://imgs.search.brave.com/6uRvswux21WCU_Ru_7Eb9x77Q8V1Yi0M0j_jpl_5ggs/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS50ZW5vci5jb20v/bTIyMWF0amNNcjBB/QUFBTS93ZS1hcmUt/c28tY29va2VkLmdp/Zg.gif" alt="3D Convex Hull Flowchart">
+    </div>
+
+    <h3>3. Method of Explanation</h3>
+    <p class="method-explanation">The <b>Brute Force</b> approach is explained as testing every possible triangle to see if it belongs to the "outer shell" of a point cloud.</p>
+
+    <h3>4. Example (Simple Cube Points)</h3>
+    <div class="example-block">
+        <p><b>Execution Steps:</b><br>
+        - Take 8 corners of a cube.<br>
+        - Test face (0,0,0), (1,0,0), (1,1,0).<br>
+        - Calculate <b>Signed Volume</b> for other points.<br>
+        - If all signs are the same, this is a face.</p>
+        
+        <p><b>Flowchart Placeholder:</b></p>
+        <div class="flowchart-box"><img src="https://i.ibb.co/Xfv1hRm5/20260101-015330.jpg" alt="3D Hull Example"></div>
+
+        <p><b>Dummy Code:</b></p>
+        <div class="code-container">
+            for (a,b,c in Points):<br>
+            &nbsp;&nbsp;if all points on one side of plane(a,b,c):<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;Hull.add(Face(a,b,c))
+        </div>
+
+        <p><b>Final Explanation:</b> While O(n⁴), this method is excellent for understanding how geometric boundaries are defined by checking planar consistency.</p>
+    </div>
+</div>
+
+</body>
+</html>
